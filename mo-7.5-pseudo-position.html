@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes & Position</title>
+    <style>
+        #pseudo {
+            border: 1px solid skyblue;
+            padding: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+        h3 {
+            color: brown;
+            cursor: pointer;
+        }
+        h3:hover {
+            color: aquamarine;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 50%;            
+        }
+        input {
+            height: 25px;
+            border: 2px solid gray;
+        }
+        input:focus {
+            color: yellowgreen;
+            outline: 0;
+            border: 2px solid purple;
+            padding: 5px;
+        }
+        a:visited {
+            color: darkred;
+        }
+        #pseudo li:first-child {
+            background-color: burlywood;
+        }
+        #pseudo li:last-child {
+            background-color: bisque;
+        }
+        #pseudo li:nth-child(2n) {
+            background-color: chartreuse;
+        }
+        #pseudo li:nth-child(2n +1 ) {
+            color: brown;
+        }
+
+
+        #position {
+            border: 1px solid skyblue;
+            padding: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+
+        #position .box {
+            border: 1px dotted peru;
+            max-width: 300px;
+        }
+
+        /* #position .ring {
+            position: relative;
+            left: 150px;
+            top: -30px;
+        } */
+
+        /* #position .ring {
+            position: absolute;
+            left: 150px;
+            top: 30px;
+        } */
+
+        .dummy {
+            border: 1px solid teal;
+            width: 100px;
+            height: 100px;
+            margin-top: 20px;
+        }
+        /* .boy {
+            position: sticky;
+            top: 0px;
+        } */
+        /* .boy {
+            position: fixed;
+            top: 0px;
+            right: 0;
+            width: 100%;
+        } */
+        nav {
+            border: 1px solid rosybrown;
+            background-color: burlywood;
+            height: 50px;
+            text-align: center;
+            font-size: 20px;
+            padding-top: 8px;
+            /* position: sticky; */
+            position: fixed;
+            top: 0;
+            width: 80%;
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- ***** Pseudo ***** -->
+    <section id="pseudo">
+        <h2>Pseudo Classes</h2>
+        <h3>My Heading</h3>
+        <form action="">
+            <input type="text" placeholder="Your Name"> 
+            <input type="text" placeholder="Your Email">
+            <input type="password" placeholder="Your Password">
+        </form>
+
+        <a href="https://search.yahoo.com/web">Yahoo</a>
+        <a href="https://www.youtube.com">Youtube</a>
+
+        <ul class="">
+            <li>Name - 1</li>
+            <li>Name - 2</li>
+            <li>Name - 3</li>
+            <li>Name - 4</li>
+            <li>Name - 5</li>
+        </ul>
+    </section>
+
+    <!-- ***** Position - static , relative, absolue fixed ***** -->
+     <section id="position">
+        <nav>Position-fixed</nav>
+        <h2>CSS Position</h2>
+        <ol class="ol-container">
+            <!-- Flow related -->
+            <li>Static</li>
+            <li>
+                Relative: Current position relative e koto tuku change and will not leave the current spot
+            </li>
+            <li>Absolate</li>
+            <!-- scroll related -->
+            <li>Fixed</li>
+            <li>Sticky</li>
+        </ol>
+
+        
+
+        <div class="swim-container">
+            <div class="box boy">
+                <img src="images/boy.png" alt="">
+            </div>
+            <div class="box ring">
+                <img src="images/ring.jpg" alt="">
+            </div>
+            <div class="box water">
+                <img src="images/water.jpeg" alt="">
+            </div>
+            <div>
+                <div class="dummy"></div>
+                <div class="dummy"></div>
+                <div class="dummy"></div>
+                <div class="dummy"></div>
+                <div class="dummy"></div>
+                <div class="dummy"></div>
+                <div class="dummy"></div>
+                <div class="dummy"></div>
+                <div class="dummy"></div>
+                <div class="dummy"></div>
+                <div class="dummy"></div>
+                <div class="dummy"></div>
+                <div class="dummy"></div>
+                <div class="dummy"></div>
+                <div class="dummy"></div>
+            </div>
+        </div>
+        <div style="font-size: 25px;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolores unde vero hic eius illum nobis pariatur, assumenda enim eligendi, ea corrupti fuga nostrum ipsum a exercitationem consectetur iusto recusandae commodi molestiae. Fugiat provident atque et maxime aliquid quas alias, tempora dicta error iure consequatur odio, officiis expedita in laboriosam, excepturi explicabo totam adipisci eos vel fuga. Cumque dolores autem minus, ab eum enim aspernatur pariatur nulla tempora accusamus quibusdam dignissimos, fuga laboriosam hic asperiores, excepturi repellendus nostrum veritatis harum aliquid. Voluptates similique natus beatae quod deleniti perspiciatis totam neque cum hic sed, unde culpa quibusdam ullam quis ex eaque nihil omnis dolores! Porro iusto ut ipsam reiciendis dignissimos laborum doloremque, odio sed quae possimus. Perferendis aperiam deserunt saepe aut quas aliquid nulla debitis nisi facere facilis corporis deleniti aliquam impedit unde explicabo officiis, nihil reiciendis sequi minus! Repellat libero totam quod inventore? Consequatur voluptates quidem neque perspiciatis accusantium, laborum minus est cupiditate eum modi error cum sunt quam obcaecati velit! Unde iusto quod iste hic eius quasi ab reprehenderit asperiores error, minima quo ea alias exercitationem facere tempore autem perferendis labore rem quisquam soluta? A nihil iusto dolores ratione illum quam asperiores atque quisquam sint repudiandae cumque quis eaque adipisci repellendus expedita deserunt voluptatum error, dolore iste! Veniam a obcaecati aperiam totam recusandae soluta magnam maiores libero! Quo nisi quod consectetur consequuntur quas maiores sunt ullam! Ipsa repellat eveniet omnis obcaecati. Autem animi quas, repudiandae ratione minima assumenda quaerat dicta optio voluptates temporibus quam veritatis, distinctio explicabo qui ea dignissimos odit aut doloremque fuga cupiditate? Iusto beatae autem necessitatibus nemo accusantium. Inventore aut recusandae reiciendis minima sunt debitis ipsam repellendus, eligendi eius vel aperiam error, ipsum incidunt earum numquam commodi iusto cumque! Nisi illum, modi incidunt possimus iusto tempora commodi? Omnis, pariatur, numquam officiis quia magni sapiente accusamus deleniti tenetur temporibus facere ab earum doloremque consectetur maiores ex dolore consequatur in qui eaque a. Facilis, rem. Voluptates facilis iste hic incidunt! Totam odio consequatur, iste vel quaerat reiciendis! Odio quidem error vel beatae dolore ratione assumenda repudiandae vero! Id, excepturi minus similique velit tenetur eos tempora, accusamus nostrum facere odio architecto provident ducimus hic cum debitis quos odit autem animi sequi eum consequuntur voluptates ea. Magni placeat dolorum neque cumque sed expedita est cupiditate. Explicabo magnam libero excepturi iusto fugit obcaecati voluptas vitae, in nostrum iste accusantium error atque et nihil exercitationem impedit omnis vel perspiciatis reiciendis, ab id incidunt! Sapiente cumque quod odit ipsum minus corporis perferendis accusamus officiis necessitatibus, ipsa dicta dolore vel esse iure fugit sequi placeat. Nihil aspernatur inventore non veniam illo incidunt blanditiis dicta et repellat architecto vel maxime maiores a obcaecati enim soluta voluptate, accusamus necessitatibus? Nobis facere nulla aut non optio obcaecati dicta quidem, dolores nesciunt in ex nisi corrupti blanditiis vero repudiandae sapiente, vitae asperiores beatae rem molestiae est id magnam ipsum. Non odit autem laborum distinctio nam, enim, omnis ullam ipsam dolorem voluptates, obcaecati minus? Debitis ipsam nostrum maxime iusto, deserunt libero, velit amet aperiam beatae sequi magnam enim quidem.</p>
+        </div>
+       
+
+        
+     </section>
+
+</body>
+</html>
